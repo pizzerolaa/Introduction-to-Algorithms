@@ -39,7 +39,7 @@ Each main topic will have its own folder, and within it, you'll find:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/pizzerolaa/Introduction-to-Algorithms.git
+   git clone https://github.com/pizzerolaa/Introduction-to-Algorithms
    ```
 
 2. Navigate through the folders to find the topic you're interested in.
