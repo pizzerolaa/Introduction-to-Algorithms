@@ -16,7 +16,7 @@ def convert1Dto2D(original: list[int], m: int, n: int) -> list[list[int]]:
         mtx.append(row)
     return mtx
 
-original = [1, 2, 3]
-n = 1
-m = 3
+original = [1, 2, 3, 4]
+n = int(input())
+m = int(input())
 print(convert1Dto2D(original, n, m))
