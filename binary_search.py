@@ -1,6 +1,6 @@
-# "Binary Search, buscar un elemento en un arreglo ordenado\nNumero entre 1 y 10"
-
+# Binary Search, buscar un elemento en un arreglo ordenado
 def binary_search(arr, target):
+    #arr = sorted(arr)
     numMin = 0
     numMax = len(arr) - 1
     
@@ -13,12 +13,14 @@ def binary_search(arr, target):
         else:
             numMax = mid - 1
     return -1
-    
 
-#inputs
-print("Ingrese un número del 1 al 10: ")
-target = int(input())
-arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# inputs
+print("Letra a buscar: ")
+target = input()
+arr = ['a', 'b', 'f', 'h', 'c', 'g']
 
-#ouput (indice del target)
-print(f'índice del numero a buscar: {binary_search(arr, target)}')
+try:
+    posicion = arr.index(target)
+    print(f'La letra {target} está en la posición: {posicion}')
+except ValueError:
+    print(f'La letra {target} no está en el arreglo')
