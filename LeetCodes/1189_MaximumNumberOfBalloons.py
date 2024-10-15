@@ -10,7 +10,7 @@ def maxNumberofBallons(text: str) -> int:
     if not all(char in aux for char in "balloon"):
         return 0
     
-    return min( #hell naw lil bro, we count the min cant of letters in aux(dict)
+    return min( #hell nah lil bro, we count the min cant of letters in aux(dict)
         aux.get('b', 0),
         aux.get('a', 0),
         aux.get('l', 0) // 2,
