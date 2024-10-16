@@ -57,6 +57,7 @@ This is a personal learning project, but if you find any errors or have suggesti
 - [Book: Introduction to Algorithms by CLRS](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
 - [Roadmap: Data Structures and Algorithms by RoadmapSH](https://roadmap.sh/datastructures-and-algorithms)
 - [Princeton's Algorithms Course on Coursera](https://www.coursera.org/learn/algorithms-part1)
+- [AlgoMap.io: Basics DSA and algorithms](https://algomap.io/)
 - [LeetCode](https://leetcode.com/)
 - [HackerRank](https://www.hackerrank.com/)
 
