@@ -1,58 +1,55 @@
-# Introduction to Algorithms
+# 🧠 Introduction to Algorithms
+
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This repository contains my progress and learning in the field of Data Structures and Algorithms, following a structured roadmap. All code is implemented in Python.
 
-## Content
+## 📚 Content
 
-The repository will be updated with the following topics:
+The repository currently includes:
 
 1. Basic Data Structures
-   - Arrays
-   - Linked Lists
-   - Stacks
-   - Queues
-   - Trees
-   - Graphs
-   - Hash Tables
+   - [x] 1.1 Arrays
+2. Problem Solving
+   - [x] LeetCode solutions
+   - [x] HackerRank solutions
 
-2. Fundamental Algorithms
-   - Searching
-   - Sorting
-   - Recursion
-   - Divide and Conquer
+## 📁 Repository Structure
 
-3. Advanced Algorithms
-   - Dynamic Programming
-   - Greedy Algorithms
-   - Backtracking
+```
+.
+├── 1. Basic Data Structures
+│   └── 1.1 Arrays
+├── HackerRanks
+├── LeetCodes
+├── .gitignore
+├── LICENSE
+├── README.md
+└── binary_search.py
+```
 
-## Repository Structure
-
-Each main topic will have its own folder, and within it, you'll find:
-
+Each folder contains:
 - Python implementations
 - Usage examples
-- Explanatory notes
+- Explanatory notes (where applicable)
 - Solved exercises
 
-## How to Use This Repository
+## 🚀 How to Use This Repository
 
 1. Clone the repository:
    ```
-   git clone https://github.com/pizzerolaa/Introduction-to-Algorithms
+   git clone https://github.com/pizzerolaa/Introduction-to-Algorithms.git
    ```
-
 2. Navigate through the folders to find the topic you're interested in.
-
-3. Read the README.md files within each folder for more information about each topic.
-
+3. Read the code and comments within each file for more information about each implementation.
 4. Run the Python scripts to see the algorithms in action.
 
-## Contributions
+## 🤝 Contributions
 
 This is a personal learning project, but if you find any errors or have suggestions, feel free to open an issue or send a pull request.
 
-## Resources
+## 📚 Resources
 
 - [Book: Introduction to Algorithms by CLRS](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
 - [Roadmap: Data Structures and Algorithms by RoadmapSH](https://roadmap.sh/datastructures-and-algorithms)
@@ -61,6 +58,10 @@ This is a personal learning project, but if you find any errors or have suggesti
 - [LeetCode](https://leetcode.com/)
 - [HackerRank](https://www.hackerrank.com/)
 
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ---
 
-Happy coding and learning!
+Happy coding and learning! 🎉
