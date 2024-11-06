@@ -12,7 +12,7 @@ def rotate(matrix: list[list[int]]) -> None:
             matrix[i].reverse()
 
       #this one have the same time complexity O(n²), but is more concise and delete the necesity of 2 for loops
-      # *zip(matrix) transposes the matrix
+      # zip(*matrix) transposes the matrix
       # list(row)[::-1] inverts each row of the transposed matrix
       # matrix[:] = ... overwrites the original matrix, so that it stays in place without using a new temporary var
       matrix[:] = [list(row)[::-1] for row in zip(*matrix)]
