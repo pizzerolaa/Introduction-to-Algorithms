@@ -27,6 +27,6 @@ def threeSum(nums: list[int]) -> list[list[int]]:
                 z -= 1
     return aux
 
-nums = [-1,0,1,2,-1,-4]
+nums = [-3, -2, -3, -1, 1, 0, 3, 2, 2]
 input()
 print(threeSum(nums))
