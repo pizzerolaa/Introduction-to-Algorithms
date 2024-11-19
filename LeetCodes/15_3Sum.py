@@ -3,7 +3,7 @@
 # Notice that the solution set must not contain duplicate triplets.
 
 def threeSum(nums: list[int]) -> list[list[int]]:
-    nums.sort() #we sort to facilate the search
+    nums.sort() #we sort to facility the search
     aux = []
     
     for x in range(len(nums) - 2): #first index
