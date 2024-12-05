@@ -22,8 +22,8 @@ class LinkedList:
 
     #method that inserts the node at the given index in LL
     def insertAtIndex(self, data, index):
-        if index == 0:
-            self.insertAtBegin(data)
+        if index == 0: #if index is equal to 0 it means the node
+            self.insertAtBegin(data) #is to be inserted at the begin
             return
 
         pos = 0 #counter initialized with 0
