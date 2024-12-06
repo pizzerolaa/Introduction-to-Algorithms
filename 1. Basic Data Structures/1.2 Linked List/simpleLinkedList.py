@@ -10,17 +10,13 @@ class LinkedList:
     def __init__(self):
         self.head = None
     
-    #method that inserts a node at the beginnin in LL
+    #method to add a node at the beginnin in LL
     def insertAtBegin(self, data):
         newNode = Node(data) #we create newNode with the given data
-        if self.head is None: #check if the head is an empty node or not
-            self.head = newNode #we make the newNode as head
-            return
-        else:
-            newNode.next = self.next #we insert the head at the next newNode 
-            self.head = newNode #and make the head equal to newNode 
-
-    #method that inserts the node at the given index in LL
+        newNode.next = self.head
+        self.head = newNode
+        
+    #method to add a node at the given index in LL
     def insertAtIndex(self, data, index):
         if index == 0: #if index is equal to 0 it means the node
             self.insertAtBegin(data) #is to be inserted at the begin
@@ -39,6 +35,34 @@ class LinkedList:
         else:
             print("Index not present")
 
+    #method to add a node at the end of the LL
     def insertAtEnd(self, data):
-        pass
+        newNode = Node(data) #we create a new node
+        if self.head is None:
+            self.head = newNode #check if don't have nothing in the head, if we have it add the newNode
+            return
+        
+        current = self.head
+        while current.next:
+            current = current.next
+        
+        current.next = newNode
     
+    #method to print the LL
+    def printLL(self):
+        current_node = self.head
+        while current_node:
+            print(current_node.data)
+            current_node = current_node.next
+
+llist = LinkedList() #create a new linked list
+
+#add notes to the LL
+llist.insertAtEnd('a')
+llist.insertAtEnd('b')
+llist.insertAtBegin('c')
+llist.insertAtEnd('d')
+llist.insertAtIndex('g', 2)
+
+print("Node data: ")
+llist.printLL()
