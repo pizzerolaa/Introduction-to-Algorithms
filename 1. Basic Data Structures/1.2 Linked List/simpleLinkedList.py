@@ -15,7 +15,7 @@ class LinkedList:
         newNode = Node(data) #we create newNode with the given data
         newNode.next = self.head
         self.head = newNode
-        
+
     #method to add a node at the given index in LL
     def insertAtIndex(self, data, index):
         if index == 0: #if index is equal to 0 it means the node
