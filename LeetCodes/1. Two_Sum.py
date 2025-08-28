@@ -16,7 +16,7 @@ def two_sum(nums: list[int], target: int) -> list[int]:
     while l < r:
         suma = new_nums[l][0] + new_nums[r][0]
         if suma == target:
-            return sorted([new_nums[l][1], new_nums[r][1]])
+            return ([new_nums[l][1], new_nums[r][1]])
         elif suma < target:
             l += 1
         else:
