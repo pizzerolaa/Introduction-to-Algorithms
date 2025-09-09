@@ -19,14 +19,13 @@ input()
 print(longest_common_prefix(strs))
 
 
-#hahaha nahh i make this shi using the Trie Data Structure
+#hahaha nahh i make this shi using the Trie Data Structure but use a lot of memory
 # def longest_common_prefix(strs: list[str]) -> str:
 #     if not strs or len(strs) == 0:
 #         return ""
     
 #     if len(strs) == 1:
 #         return strs[0]
-    
 #     trie = {}
 
 #     for s in strs:
