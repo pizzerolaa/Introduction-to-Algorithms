@@ -9,6 +9,7 @@
 # Return k.
 
 def remove_duplicates(nums: list[int]) -> int:
+    #using 
     if not nums:
         return 0
     res = 0
