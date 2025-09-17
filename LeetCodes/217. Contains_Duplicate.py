@@ -8,15 +8,23 @@
     # The element 1 occurs at the indices 0 and 3.
 
 def contains_duplicate(nums: list[int]) -> bool:
-    hashm = set()
-    for i in range(len(nums)):
-        if nums[i] in hashm:
-            return True
-        else:
-            hashm.add(nums[i])
+    aux = {}
+    for num in nums:
+        aux[num] = aux.get(num, 0) + 1
+    
+    if max(aux.values()) >= 2:
+        return True
     return False
+    # hashm = set()
+    # for i in range(len(nums)):
+    #     if nums[i] in hashm:
+    #         return True
+    #     else:
+    #         hashm.add(nums[i])
+    # return False
     
 nums = [1, 2, 3, 1]
+input()
 print(contains_duplicate(nums))
 
 # Most efficent:
