@@ -5,23 +5,22 @@
 # The tests are generated such that there is exactly one solution. You may not use the same element twice.
 # Your solution must use only constant extra space.
 
-def twoSum(numbers: list[int], target: int) -> list[int]:
-    #in this case we have the sum, but using the Two Pointers technique.
+def two_sum(numbers: list[int], target: int) -> list[int]:
     l, r = 0, len(numbers) - 1
-    res = []
-    while l < r:
-        aux = numbers[l] + numbers[r]
-        if aux == target:
-            res = [l + 1, r + 1]
-            break
-        elif aux < target:
-            l += 1
-        else:
-            r -= 1
     
-    return res
+    while l <= r:
+        s = numbers[l] + numbers[r]
+        if s == target:
+            print([l+1, r+1])
+            return [l, r]
+        elif s > target:
+            r -= 1
+        else:
+            l += 1
+    
+    return []
 
-nums = [2, 7, 11, 15] 
+numbers = [2,7,11,15]
 target = 9
 input()
-print(twoSum(nums, target))
+print(two_sum(numbers, target))
