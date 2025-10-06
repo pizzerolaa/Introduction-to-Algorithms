@@ -6,18 +6,37 @@
 # Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
 
 def max_profit(prices: list[int]) -> int:
-    min_p = float('inf')
-    max_p = 0
+    # no_stock = 0
+    # hold_stock = -prices[0]
 
-    for p in prices:
-        if p < min_p:
-            min_p = p
-        elif p - min_p > max_p:
-            max_p = p - min_p
+    # for i in range(1, len(prices)):
+    #     prev_ns = max(no_stock, hold_stock + prices[i])
+    #     prev_hs = max(hold_stock, no_stock - prices[i])
+    #     no_stock = prev_ns
+    #     hold_stock = prev_hs
+    # return no_stock
 
-    return int(max_p)
+    profit = 0
+        
+    for i in range(1, len(prices)):
+        if prices[i] > prices[i-1]:
+            profit += prices[i] - prices[i-1]
+    
+    return profit
 
-prices = [3, 2, 6, 1, 4]
+    # min_p = float('inf')
+    # max_p = 0
+    # dp = [0] * len(prices)
+
+    # for p in prices:
+    #     if p < min_p:
+    #         min_p = p
+    #     elif p - min_p > max_p:
+    #         max_p = p - min_p
+
+    # return int(max_p)
+
+prices = [7,1,5,3,6,4]
 input()
 print(max_profit(prices=prices))
 
